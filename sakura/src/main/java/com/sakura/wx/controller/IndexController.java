@@ -1,14 +1,22 @@
 package com.sakura.wx.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController
+@Controller
 public class IndexController {
+
+
+    @RequestMapping("/init.action")
+    public String init(HashMap<String, Object> map)
+    {
+        map.put("hello", "欢迎进入HTML页面");
+        return "/index";
+    }
 
     @RequestMapping(value = "index.action", method = RequestMethod.GET)
     public Map<String,String> getCity()
@@ -17,4 +25,6 @@ public class IndexController {
         map.put("111","1111");
         return map;
     }
+
+
 }
