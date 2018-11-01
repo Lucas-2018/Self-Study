@@ -14,7 +14,7 @@ public class IndexController {
     @RequestMapping("/init.action")
     public String init(HashMap<String, Object> map)
     {
-        map.put("hello", "欢迎进入HTML页面");
+        map.put("hello", "This is a very long and good life. ");
         return "/index";
     }
 
