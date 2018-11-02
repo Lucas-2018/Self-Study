@@ -21,7 +21,12 @@ body {
     text-align: center;
     line-height: 4rem;
     height: 17%;
-    background-color: goldenrod;
+    background-color: #303030 ;
     font-family: Consolas;
     font-size: 173%;
+    color: white;
+}
+.loginCont{
+    width: 30%;
+    height: 30%;
 }
