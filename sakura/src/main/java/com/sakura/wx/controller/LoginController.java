@@ -11,7 +11,7 @@ import java.util.Map;
 public class LoginController {
 
 
-    @RequestMapping(value = "/login.action", method = {RequestMethod.GET,RequestMethod.POST})
+    @RequestMapping(value = "/login.action", method = {RequestMethod.POST})
     public Map<String,String> login(String userName, String passWord)
     {
         Map<String,String> map = new HashMap<>();
@@ -23,6 +23,7 @@ public class LoginController {
         {
             map.put("loginStatus","error");
         }
+
 
         return map;
     }
