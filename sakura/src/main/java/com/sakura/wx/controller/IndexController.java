@@ -15,16 +15,7 @@ public class IndexController {
     @RequestMapping("/init.action")
     public String init(HashMap<String, Object> map)
     {
-        map.put("hello", "This is a very long and good life. ");
         return "/index";
-    }
-
-    @RequestMapping(value = "index.action", method = RequestMethod.GET)
-    public Map<String,String> getCity()
-    {
-        Map<String,String> map = new HashMap<>();
-        map.put("111","1111");
-        return map;
     }
 
 
